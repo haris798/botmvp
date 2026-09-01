@@ -1,4 +1,4 @@
-import { LayoutDashboard, Activity, History, FileText, Settings, LineChart, Server, AlertCircle } from 'lucide-react';
+import { LayoutDashboard, Activity, History, FileText, Settings, LineChart, Server, AlertCircle, Calculator, PlayCircle, BarChart2 } from 'lucide-react';
 
 interface SidebarProps {
   activeView: string;
@@ -13,6 +13,9 @@ export function Sidebar({ activeView, setActiveView }: SidebarProps) {
     { name: 'Performance', icon: LineChart },
     { name: 'Logs', icon: FileText },
     { name: 'Alerts', icon: AlertCircle },
+    { name: 'Calculator', icon: Calculator },
+    { name: 'Simulator', icon: PlayCircle },
+    { name: 'Backtest', icon: BarChart2 },
     { name: 'System', icon: Server },
     { name: 'Settings', icon: Settings },
   ];

@@ -15,6 +15,9 @@ import { Performance } from './components/Performance';
 import { Settings } from './components/Settings';
 import { System } from './components/System';
 import { Alerts } from './components/Alerts';
+import { PositionSizeCalculator } from './components/PositionSizeCalculator';
+import { PaperTradeSimulator } from './components/PaperTradeSimulator';
+import { Backtest } from './components/Backtest';
 
 export default function App() {
   const [activeView, setActiveView] = useState('Overview');
@@ -43,8 +46,11 @@ export default function App() {
           {activeView === 'Logs' && <Logs />}
           {activeView === 'System' && <System />}
           {activeView === 'Alerts' && <Alerts />}
+          {activeView === 'Calculator' && <PositionSizeCalculator />}
+          {activeView === 'Simulator' && <PaperTradeSimulator />}
+          {activeView === 'Backtest' && <Backtest />}
           {activeView === 'Settings' && <Settings />}
-          {activeView !== 'Overview' && activeView !== 'Signals' && activeView !== 'History' && activeView !== 'Performance' && activeView !== 'Logs' && activeView !== 'System' && activeView !== 'Alerts' && activeView !== 'Settings' && (
+          {activeView !== 'Overview' && activeView !== 'Signals' && activeView !== 'History' && activeView !== 'Performance' && activeView !== 'Logs' && activeView !== 'System' && activeView !== 'Alerts' && activeView !== 'Calculator' && activeView !== 'Simulator' && activeView !== 'Backtest' && activeView !== 'Settings' && (
             <div className="text-slate-600">View: {activeView} content goes here.</div>
           )}
         </main>
