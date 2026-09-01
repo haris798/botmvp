@@ -1,0 +1,6 @@
+{
+  "name": "Forex Trading Bot MVP",
+  "description": "An automated Forex trading bot dashboard with real-time signal monitoring, risk management oversight, and trade history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
