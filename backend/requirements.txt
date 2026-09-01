@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+supabase
+pandas
+numpy
+TA-Lib
+websockets
+python-dotenv
+httpx
